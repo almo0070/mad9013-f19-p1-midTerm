@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
+    color:   hsl(199, 60%, 26%);
+        box-sizing: border-box;
+        font-size :16px;
+        margin: 0;
+        padding: 0;
 }
 
 *,
