@@ -16,12 +16,16 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
     /*font-family: font stack required for body text */
+    text-align: justify;
+    text-justify: inter-word;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.4;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
 
 h1, h2, h3, h4 {
@@ -31,7 +35,8 @@ h1, h2, h3, h4 {
 }
 
 p {
-    
+    margin: 1rem;
+    padding-bottom: 1rem
 }
 
 .container {
@@ -112,7 +117,9 @@ p {
 }
 
 hh1.story-title {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    
   
     
 }
@@ -149,27 +156,30 @@ hh1.story-title {
 }
 
 p.byline span.author {
-    
+    display: flex;
+    justify-content: flex-end;
     font-style: italic;
     font-weight: bold;
 
 }
 
 p.byline span.pub {
+    display: flex;
+    justify-content: flex-end;
     font-style: italic;
     font-weight: bold;
 
 }
 
 .foot {
+    display: flex;
+    justify-content: flex-end;
     font-style: italic;
     font-weight: bold;
-
 }
 
 .foot p
 {
-    font-style: italic;
-    font-weight: bold;
+    
 
 }
