@@ -40,17 +40,8 @@ p {
     /*align-items: flex-end;
     /* align-self: flex-end; */
     margin-right:  1rem;
-    justify-content: flex-end;
-    /*align-self: flex-end;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
-    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end |
-     self-start | self-end + ... safe | unsafe; */
-    
-    /*align-content: flex-end
-    flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end |
-     baseline | first baseline | last baseline + ... safe | unsafe;*/
+    justify-content: flex-end;  
+   
 }
 
 .subnav a {
