@@ -111,13 +111,22 @@ p {
     
 }
 
-h1.story-title {
+hh1.story-title {
+    text-align: center;
+  
+    
+}
+ 
+.story img {
+    float: left;
+    display: inline-block;
+    overflow: auto;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
     
 }
 
-.story img {
-    
-}
 
 .story p {
     
@@ -141,17 +150,26 @@ h1.story-title {
 
 p.byline span.author {
     
+    font-style: italic;
+    font-weight: bold;
+
 }
 
 p.byline span.pub {
-    
+    font-style: italic;
+    font-weight: bold;
+
 }
 
 .foot {
-    
+    font-style: italic;
+    font-weight: bold;
+
 }
 
 .foot p
 {
-    
+    font-style: italic;
+    font-weight: bold;
+
 }
