@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -11,6 +14,7 @@ html {
 
 body {
     /*font-family: font stack required for body text */
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.4;
     margin: 0;
@@ -19,6 +23,8 @@ body {
 
 h1, h2, h3, h4 {
     /*font-family: font stack required for headings */
+    font-family: 'Grenze', "Times New Roman", Times, serif;
+    font-size: 3rem;
 }
 
 p {
@@ -40,8 +46,18 @@ p {
     /*align-items: flex-end;
     /* align-self: flex-end; */
     margin-right:  1rem;
-    justify-content: flex-end;  
-   
+    justify-content: flex-end;
+    font-family: 'Grenze', "Times New Roman", Times, serif;
+    /*align-self: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end |
+     self-start | self-end + ... safe | unsafe; */
+    
+    /*align-content: flex-end
+    flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end |
+     baseline | first baseline | last baseline + ... safe | unsafe;*/
 }
 
 .subnav a {
@@ -54,6 +70,7 @@ p {
 .mainnav {
 
     /*justify-content: space-around*/
+    font-family: 'Grenze', "Times New Roman", Times, serif;
     display: flex;   
     justify-content:space-between;
     padding: 2rem;
