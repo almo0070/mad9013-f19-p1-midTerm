@@ -27,21 +27,52 @@ p {
 
 .container {
     
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    flex-direction: column;
+    width: 1500px;
+
 }
 
 .subnav {
+    display: flex;
+    /*align-items: flex-end;
+    /* align-self: flex-end; */
+    margin-right:  1rem;
+    justify-content: flex-end;
+    /*align-self: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end |
+     self-start | self-end + ... safe | unsafe; */
     
+    /*align-content: flex-end
+    flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end |
+     baseline | first baseline | last baseline + ... safe | unsafe;*/
 }
 
 .subnav a {
-    
+    margin-right:  1rem;
+    display: flex;
+    justify-content:space-between;
+    color:hsl(239, 14%, 36%);    
 }
 
 .mainnav {
+
+    /*justify-content: space-around*/
+    display: flex;   
+    justify-content:space-between;
+    padding: 2rem;
+  
     
 }
 
 .mainnav a {
+
+    color:hsl(202, 4%, 36%);
     
 }
 
