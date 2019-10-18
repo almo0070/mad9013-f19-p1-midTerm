@@ -30,14 +30,32 @@ body {
 
 h1, h2, h3, h4 {
     /*font-family: font stack required for headings */
+    display: flex;
+    justify-content: center;
     font-family: 'Grenze', "Times New Roman", Times, serif;
     font-size: 3rem;
+
 }
 
 p {
     margin: 1rem;
     padding-bottom: 1rem
 }
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
 
 .container {
     
@@ -46,7 +64,6 @@ p {
     padding: 5px;
     flex-direction: column;
     width: 1500px;
-
 }
 
 .subnav {
@@ -56,41 +73,46 @@ p {
     margin-right:  1rem;
     justify-content: flex-end;
     font-family: 'Grenze', "Times New Roman", Times, serif;
-    /*align-self: flex-end;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
-    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end |
-     self-start | self-end + ... safe | unsafe; */
+    font-size: 1rem;  
+    background-color: hsl(239, 14%, 36%); 
+    color:hsl(240, 10%, 92%); 
     
-    /*align-content: flex-end
-    flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end |
-     baseline | first baseline | last baseline + ... safe | unsafe;*/
 }
 
 .subnav a {
     margin-right:  1rem;
     display: flex;
     justify-content:space-between;
-    color:hsl(239, 14%, 36%);    
+    color:hsl(240, 10%, 92%);
+    background-color: hsl(239, 14%, 36%); 
+    text-decoration: none;
 }
 
-.mainnav {
 
+.mainnav {
     /*justify-content: space-around*/
     font-family: 'Grenze', "Times New Roman", Times, serif;
     display: flex;   
-    justify-content:space-between;
-    padding: 2rem;
-  
-    
+    justify-content:space-between;  
+    background-color: hsl(239, 14%, 36%); 
+    color:hsl(240, 10%, 92%);
+    padding: 2rem; 
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .mainnav a {
-
-    color:hsl(202, 4%, 36%);
     
+    color:hsl(240, 10%, 92%);
+    background-color: hsl(239, 14%, 36%);
+    text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+    color:hsl(239, 14%, 36%);  
+    background-color: hsl(240, 10%, 92%);
+  }
 
 .masthead {
     
@@ -113,8 +135,19 @@ p {
 }
 
 .story.lead-story {
-    
+
+    color:  hsl(198, 88%, 7%);
+    background-color:hsl(199, 7%, 93%);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border-style: solid;
+    border-color: hsl(199, 46%, 34%);
+    box-shadow: 0 3px 9px 0 hsl(199, 6%, 29%);
+    text-shadow: 2rem;
+    margin-top: 0rem;
 }
+
+
 
 hh1.story-title {
     display: flex;
@@ -126,7 +159,6 @@ hh1.story-title {
  
 .story img {
     float: left;
-    display: inline-block;
     overflow: auto;
     margin-right: 1rem;
     margin-left: 0.5rem;
@@ -183,3 +215,9 @@ p.byline span.pub {
     
 
 }
+
+article.story.lead-story:hover {
+    text-decoration: underline;
+    color:hsl(235, 100%, 2%);  
+    background-color: hsl(58, 35%, 81%);
+  }
